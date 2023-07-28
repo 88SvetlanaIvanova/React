@@ -1,9 +1,17 @@
-
-
-
 .thumbnail {
   width:100%;
-  
+}
+.thumbnail-row{
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 12px;
 }
 
 .video-info-grid{
@@ -16,13 +24,6 @@
   border-radius: 50px;
 }
 
-.video-title {
-  margin-top: 0;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 12px;
-}
 
 .video-author,
 .video-stats {
@@ -42,4 +43,19 @@
 
 .thumbnail-row {
   margin-bottom: 12px;
+}
+.video-time{
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
 }
