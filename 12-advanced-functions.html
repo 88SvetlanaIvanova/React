@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Advanced Functions</title>
+</head>
+
+<body>
+
+  <button onclick="" class="js-button">Click</button>
+  <script>
+
+    /*
+    const buttonElement =
+      document.querySelector('.js-button');
+    const eventListener = () => {
+      console.log('click');
+
+    }
+
+    buttonElement.addEventListener('click', eventListener
+
+    );
+
+    buttonElement.removeEventListener('click', eventListener);
+
+    buttonElement.addEventListener('click', eventListener);
+*/
+    /*
+    function greeting(){
+      console.log('hello')
+    }
+    greeting();
+    //Hoisting
+
+    const num = 2;
+    //Anonymous Function
+    const function1= function (){
+      console.log('hello2')
+    }
+    console.log(function1);
+    console.log(typeof function1);
+    function1();
+    
+    //Method (function, saved inside an object)
+    const object1 ={
+      nun:2,
+      fun: function(){
+      console.log('hello3')
+      }
+    }
+    object1.fun();
+
+    function display(param){
+      console.log(param);
+    }
+    display(2);//passing a value into a function
+
+    function run(param){
+        param();
+    }
+//Passing a function into another function
+    run(function(){//Callback function. Functions are values.
+      console.log('hello4');
+    });
+    */
+
+    /*
+  setTimeout(function () {
+    console.log('timeout');
+    console.log('timeout2');
+  }, 3000);
+
+  console.log('next line');
+
+  setInterval(function () {
+    console.log('interval');
+  }, 3000);
+  //it will keep running a function in the future
+  console.log('next line2');*/
+    /*
+    
+        [
+          'make dinner',
+          'wash dishes',
+          'watch youtube'
+        ].forEach((value, index) => {
+          if(value === 'wash dishes'){
+            return 5;
+          }
+          console.log(index);
+          console.log(value);
+        });
+    
+        const regularFunction = function(param, param2)
+        {
+          console.log('hello');
+          return 5;  
+        };
+    
+        const arrowfunction = () => {
+          console.log('hello');
+            //Arrow function
+        };
+        arrowfunction();
+    
+        const oneParam = (param) => {
+          console.log(param + 1);
+        };
+    
+        oneParam(2);
+    
+        const oneLine = () => 2 + 3;
+    
+        console.log(oneLine());
+        const object2 = {
+          method: () =>{
+    
+          },
+          method() {
+    
+          }
+        }
+        
+    console.log([1, -3, 5].filter((value, index) => {
+      /*
+      if(value >= 0){
+        return true;
+      }else{
+        return false;
+      }
+      
+      return value >= 0;
+    }));   
+    
+    console.log([1,1,3].map((value, index) => {
+      return value * 2;
+    }));
+
+    console.log([1,1,3].map(value => value * 2));
+    */
+    // 12j, 12k
+    const arrowfunction = (value1, value2) => { return value1 * value2; };
+
+    //console.log(arrowfunction(2,3));
+    //console.log(arrowfunction(7,10));
+
+    //12l Create a function countPositive(nums) that takes an array of numbers
+    // and returns how many numbers in the array are greater than zero. Create a function using .forEach() instead of loop.
+
+    function countPositive(nums) {
+      let positive = 0;
+      nums.forEach(num => {
+        if (num > 0) {
+          positive++;
+        }
+      });
+      return positive;
+    };
+    const nums1 = [1, 0, 3, -3];
+  //  console.log(countPositive(nums1));
+
+    //12m
+
+    function addNum(array, num) {
+      return array.map(value =>
+        value + num);
+    }
+    const arr1 = [1, 2, 3];
+    const arr2 = [-2, -1, 0, 99]
+  //  console.log(addNum(arr2, 2));
+
+
+    //12n Create a function removeEgg(foods)that takes an array of strings and returns an array where the string 'egg' is removed. Create this function using .filter() instead of a loop
+    function removeEgg(foods) {
+      return foods.filter(food => food !== 'egg');
+    };
+    const foodList = ['egg','apple', 'egg', 'banana', 'egg', 'orange', 'ham'];
+ //   console.log(removeEgg(foodList));
+
+//12o  Create a function removeEgg(foods)that takes an array of strings and returns an array where the first two string 'egg' is removed from the array. Create this function using .filter() instead of a loop
+    function removeEgg2(foods) {
+      let count = 0;
+      return foods.filter(food => {
+        if(food === 'egg'){
+          count++;
+        }
+        return food !== 'egg' || count > 2;
+      });
+    };
+    const foodList2 = ['egg', 'apple', 'egg', 'banana', 'egg', 'orange'];
+  //  console.log(removeEgg2(foodList)); 
+/*  return food !== 'egg' || count > 2;       To summarize:
+
+If the current element is not equal to 'egg', it is automatically included in the filtered array.
+If the current element is equal to 'egg' and the count of 'egg' occurrences is greater than 2, it is also included in the filtered array.
+*/
+
+//12a
+const add = () =>{
+  console.log(2 + 3);
+};
+//add();
+//add();
+
+//12b
+function runTwice(param){
+        param();
+        param();
+    };
+//runTwice(add);    
+//Passing a function into another function
+   
+
+//Go back to the earlier exercises in lesson 12 (12c-12i) and switch the code to use arrow functions(when passing a function into another function, use arrow functions. Otherwise you can use either syntax)
+
+
+  </script>
+</body>
+
+</html>
